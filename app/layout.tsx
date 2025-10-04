@@ -10,10 +10,15 @@ import { TransitionProvider } from "@/components/transition-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Innovate. Create. Inspire.",
-  description: "Awwwards-inspired site using Next.js, GSAP, and Three.js",
-    generator: 'v0.app'
-}
+   title: "Innovate. Create. Inspire.",
+   description: "Awwwards-inspired site using Next.js, GSAP, and Three.js",
+   generator: 'v0.app',
+   icons: {
+     icon: '/placeholder-logo.svg',
+     shortcut: '/placeholder-logo.svg',
+     apple: '/placeholder-logo.svg',
+   },
+ }
 
 export default function RootLayout({
   children,

@@ -1,0 +1,33 @@
+.linkedinButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.linkedinButton:hover {
+  background-color: #005582;
+  transform: translateY(-2px);
+}
+
+.linkedinButton svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Style for when the button is disabled */
+.linkedinButton[aria-disabled="true"] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
