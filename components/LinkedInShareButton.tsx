@@ -10,8 +10,10 @@ export function LinkedInShareButton() {
     // This code runs only on the client, after the component has mounted.
     // This ensures `window.location.href` is available.
     if (typeof window !== 'undefined') {
-      const encodedUrl = encodeURIComponent(window.location.href);
-      setShareUrl(`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`);
+      const url = window.location.href;
+      const shareText = `Excited to share my latest Three.js portfolio! Crafting award-winning digital experiences. Check it out: ${url} #WebDev #ThreeJS #Portfolio`;
+      const encodedText = encodeURIComponent(shareText);
+      setShareUrl(`https://www.linkedin.com/feed/?shareActive=true&text=${encodedText}`);
     }
   }, []); // The empty dependency array ensures this runs only once.
 
